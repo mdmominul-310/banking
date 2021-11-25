@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="container py-5">
+        <h1>Welcome to <span class="text-primary">Father Bank!</span></h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-4 border bg-primary text-white">
+                        <h4>Deposit</h4>
+                        <h3> $<span id="deposit-total">00</span> </h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-4 border bg-warning text-white">
+                        <h4>Widraw</h4>
+                        <h3> $<span id="widraw-amount">00</span></h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-4 border bg-danger text-white">
+                        <h4>Balance</h4>
+                        <h3> $<span id="account-balance">500</span></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Acounting feild -->
+        <section class="container">
+            <div class="row gx-5 py-5">
+                <div class="col">
+                    <div class="bg-warning p-5">
+                        <p class="text-danger" id="err-messege"></p>
+                        <h2>Type your deposit money</h2>
+                        <input type="text" class="form-control my-3" id="deposit-input">
+                        <button class="btn btn-danger" id="deposit-btn">Deposit</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="bg-info p-5">
+                        <p class="text-danger" id="err-messege2"></p>
+                        <h2>widrow your money</h2>
+                        <input type="text" class="form-control my-3" id="widraw-input">
+                        <button class="btn btn-success" id="widrow-btn">Widrow</button>
+                    </div>
+                </div>
+
+                <!-- <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3 border bg-light"></div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+            </div> -->
+
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
